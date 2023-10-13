@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700;1,800&display=swap");
+@import url(./common.css);
+
+/* ################ GLOBAL STYLES ################ */
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #31384e;
+  text-align: center;
+}
+.container-fluid {
+  padding: 7% 8%;
+}
+.card {
+  border: none;
+}
+
+/* ################ NAV STYLES ################ */
+
+.navbar {
+  padding: 2% 8%;
+}
+.navbar-brand {
+  font-family: "Heebo", sans-serif;
+}
+.navbar-brand:hover {
+  color: #0b42f5 !important;
+}
+.nav-link {
+  font-size: 0.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0b42f5;
+}
+.navbar-nav {
+  text-align: right;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+/* ################ INTRO SECTION STYLES ################ */
+
+#upperIntro {
+  text-align: left;
+}
+#upperIntro h1 {
+  font: 700 4.18rem "Open Sans", sans-serif;
+  letter-spacing: 2px;
+}
+#upperIntro h5 {
+  font: 300 2.18rem "Open Sans", sans-serif;
+  letter-spacing: -1px;
+  padding-bottom: 1rem;
+}
+#upperIntro .primaryBtn {
+  margin-top: 2rem;
+}
+#upperIntro img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  #upperIntro {
+    text-align: center;
+  }
+  #upperIntro h1 {
+    font: 700 2.3rem "Open Sans", sans-serif;
+  }
+  #upperIntro h5 {
+    font: 300 1.5rem "Open Sans", sans-serif;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z'/%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+  .navbar-toggler {
+    border: none !important;
+  }
+}
+
+/* ################ SERVICES SECTION STYLES ################ */
+
+.services_features_grid.container-fluid {
+  padding: 3% 8%;
+}
+.services_features_grid .card img {
+  width: 35%;
+}
+.services_features_grid .card {
+  padding: 2rem 1.2rem;
+  text-align: left;
+  /* border: none; */
+  box-shadow: 0px 5px 10px #3d43551a;
+  border-radius: 5% 10% 5% 20%;
+  cursor: default;
+}
+.services_features_grid .card:hover {
+  box-shadow: 0px 7px 30px #31384e2d;
+  transition: box-shadow 0.3s ease-in;
+}
+.services_features_grid .card-title {
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .services_features_grid.container-fluid {
+    padding: 12% 8%;
+  }
+  #services {
+    margin-top: 5rem;
+  }
+  .services_features_grid .card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* ################ OPPORTUNITIES SECTION STYLES ################ */
+
+.opportunities_img {
+  width: 70%;
+  margin: 0 15%;
+}
+#opportunities_section {
+  text-align: left;
+}
+#opportunities_section h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.8rem;
+}
+#opportunities_section h5 {
+  font: 300 1.6rem "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 1.5rem;
+}
+#opportunities_section .small_para a {
+  text-decoration: none;
+}
+#opportunities_section .arrow_icon {
+  margin-left: 0.5rem;
+}
+
+#opportunities_section .showcase_text {
+  line-height: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  #opportunities_section {
+    text-align: center;
+  }
+  #opportunities_section h4 {
+    padding-top: 1rem;
+  }
+  #opportunities_section .small_para {
+    text-align: justify;
+    padding: 0 0.8rem;
+  }
+}
+/* ################ CASE STUDY SECTION STYLES ################ */
+
+.case_study_grid.container-fluid {
+  padding: 3% 5%;
+}
+.case_study img {
+  width: 100%;
+}
+.case_study .card {
+  box-shadow: 0px 5px 10px #3d43551a;
+  cursor: default;
+}
+.case_study .card:hover {
+  box-shadow: 0px 7px 30px #31384e2d;
+  transition: box-shadow 0.3s ease-out;
+}
+.case_study .card-body {
+  padding: 0.5rem;
+  background: #fafafa;
+}
+.case_study .card-title {
+  font-weight: bold;
+}
+
+.case_study .card_texts {
+  text-align: left;
+  padding: 1rem 0.8rem;
+}
+.see_more_btn {
+  border-radius: 2rem;
+  padding: 0.6rem 2rem;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .case_study .card {
+    margin: 1.5rem 2.2rem;
+  }
+  .case_study img {
+    width: 100%;
+  }
+  #case_studies {
+    margin-top: 2.5rem;
+  }
+  #case_studies .case_study_header .small_para {
+    padding: 0 1.5rem;
+  }
+}
+/* ################ CASE STUDY SECTION STYLES ################ */
+#newsletter {
+  background: #ecf0fc44;
+}
+#newsletter .form-inline {
+  justify-content: center;
+}
+#newsletter h3 span {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+#newsletter h3 {
+  margin-bottom: 3rem;
+}
+.news_letter_form .form-control {
+  border-radius: 25px;
+  padding: 0.6rem 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #newsletter .letterSubmitBtn {
+    margin: 1rem 0;
+  }
+  #newsletter h3 {
+    font-size: 1.5rem;
+  }
+  #newsletter h3 span {
+    font-size: 1.2rem;
+  }
+}
+
+/* ################ CASE STUDY SECTION STYLES ################ */
+
+footer .footer-link {
+  text-decoration: none;
+}
+
+footer .row {
+  text-align: left;
+}
+footer .footer-link .small_para:hover {
+  color: #0b42f5;
+}
+
+footer .company_name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0b42f5;
+}
+
+footer .row h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+footer .container-fluid {
+  padding: 1% 8% 1%;
+}
+footer .credit {
+  color: #282c3b69;
+}
+@media screen and (max-width: 768px) {
+  footer .col-sm-6 {
+    width: 50%;
+  }
+  footer {
+    margin: 3rem 0;
+  }
+}
